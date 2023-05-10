@@ -5,4 +5,5 @@ COPY requirements.txt requirements.txt
 COPY .env .env
 COPY boot.sh boot.sh
 
+RUN chmod +x /boot.sh
 ENTRYPOINT "./boot.sh"
